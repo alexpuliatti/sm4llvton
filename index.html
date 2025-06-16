@@ -12,42 +12,7 @@
       name="keywords"
       content="sm4llVTONs, research papers, academic papers, AI research, robotics research, machine learning, published papers, scientific papers, academic journals, virtual try-on, VTON"
     />
-    <!-- <meta name="author" content="Research Paper Platform" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="robots"
-      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-    /> -->
-
-    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
-    <!-- <meta
-      property="og:title"
-      content="Research Papers - Explore Cutting-Edge Research"
-    />
-    <meta
-      property="og:description"
-      content=""
-    />
-    <meta property="og:image" content="path-to-your-image.jpg" />
-    <meta property="og:url" content="https://www.yourwebsite.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Research Paper Platform" /> -->
-
-    <!-- Twitter Meta Tags (For Twitter Sharing) -->
-    <!-- <meta
-      name="twitter:title"
-      content="Research Papers - Explore Cutting-Edge Research"
-    />
-    <meta
-      name="twitter:description"
-      content=""
-    />
-    <meta name="twitter:image" content="path-to-your-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" /> -->
-
-    <!-- Canonical Link -->
-    <!-- <link rel="canonical" href="https://www.yourwebsite.com" /> -->
-
+    
     <!-- Favicon for different platforms -->
     <link
       rel="icon"
@@ -81,6 +46,40 @@
     />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <!-- Added styles for the table -->
+    <style>
+      .table-container {
+        display: flex;
+        justify-content: center;
+        padding: 2em 0;
+      }
+      .spreadsheet-table {
+        border-collapse: collapse;
+        width: 80%;
+        font-size: 1.1em;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        background-color: #f9f9f9;
+        margin: 0 auto;
+      }
+      .spreadsheet-table th,
+      .spreadsheet-table td {
+        border: 1px solid #ddd;
+        padding: 12px 15px;
+        text-align: left;
+      }
+      .spreadsheet-table th {
+        background-color: #e0e0e0;
+        color: #333;
+        font-weight: bold;
+      }
+      .spreadsheet-table tr:nth-of-type(even) {
+        background-color: #f2f2f2;
+      }
+       .spreadsheet-table tr:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
   </head>
   <body>
     <nav class="nav">
@@ -137,48 +136,53 @@
       <h2>Introduction</h2>
       <h3>Our Current Models</h3>
       <p>The sm4llVTONs family consists of several lightweight models, each an expert in a specific VTON domain. This specialization allows them to achieve state-of-the-art results on relatively small, targeted datasets.</p>
-      <table>
-        <tr>
-          <th>Model Name</th>
-          <th>Task</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>sm4ll-eye</td>
-          <td>Sunglasses & Eyewear</td>
-          <td>Release</td>
-        </tr>
-        <tr>
-          <td>sm4ll-shoes</td>
-          <td>Shoes & Footwear</td>
-          <td>Release</td>
-        </tr>
-        <tr>
-          <td>sm4ll-face</td>
-          <td>Face Swapping</td>
-          <td>Beta</td>
-        </tr>
-        <tr>
-          <td>sm4ll-top</td>
-          <td>Upper Body Garments</td>
-          <td>Alpha</td>
-        </tr>
-        <tr>
-          <td>sm4ll-bottom</td>
-          <td>Lower Body Garments</td>
-          <td>Alpha</td>
-        </tr>
-        <tr>
-          <td>sm4ll-dress</td>
-          <td>Dresses</td>
-          <td>Alpha</td>
-        </tr>
-        <tr>
-          <td>sm4ll-bg</td>
-          <td>Background Replacement</td>
-          <td>Alpha</td>
-        </tr>
-      </table>
+      
+      <!-- Styled Table -->
+      <div class="table-container">
+        <table class="spreadsheet-table">
+          <tr>
+            <th>Model Name</th>
+            <th>Task</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>sm4ll-eye</td>
+            <td>Sunglasses & Eyewear</td>
+            <td>Release</td>
+          </tr>
+          <tr>
+            <td>sm4ll-shoes</td>
+            <td>Shoes & Footwear</td>
+            <td>Release</td>
+          </tr>
+          <tr>
+            <td>sm4ll-face</td>
+            <td>Face Swapping</td>
+            <td>Beta</td>
+          </tr>
+          <tr>
+            <td>sm4ll-top</td>
+            <td>Upper Body Garments</td>
+            <td>Alpha</td>
+          </tr>
+          <tr>
+            <td>sm4ll-bottom</td>
+            <td>Lower Body Garments</td>
+            <td>Alpha</td>
+          </tr>
+          <tr>
+            <td>sm4ll-dress</td>
+            <td>Dresses</td>
+            <td>Alpha</td>
+          </tr>
+          <tr>
+            <td>sm4ll-bg</td>
+            <td>Background Replacement</td>
+            <td>Alpha</td>
+          </tr>
+        </table>
+      </div>
+
       <h3>Key Philosophy & Features</h3>
       <p>Our work is guided by a core philosophy that distinguishes it from general-purpose VTON and image editing models.
         Instead of a single, large model that handles many tasks, sm4llVTONs are experts fine-tuned for a single purpose. This results in higher fidelity, better detail preservation, and more intuitive control.
