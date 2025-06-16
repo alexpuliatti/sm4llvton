@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Main Step: Edit below title -->
-    <title>TODO: Paper Title</title>
+    <title>sm4llVTONs: A Family of Specialized Virtual Try-On Models</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="" />
+    <meta name="description" content="sm4llVTONs, a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more." />
     <meta
       name="keywords"
-      content="research papers, academic papers, AI research, robotics research, machine learning, published papers, scientific papers, academic journals"
+      content="sm4llVTONs, research papers, academic papers, AI research, robotics research, machine learning, published papers, scientific papers, academic journals, virtual try-on, VTON"
     />
     <!-- <meta name="author" content="Research Paper Platform" />
     <meta name="robots" content="index, follow" />
@@ -103,7 +103,7 @@
     -->
 
     <div class="header">
-      <h1>TODO: Paper Title</h1>
+      <h1>sm4llVTONs: A Family of Specialized Virtual Try-On Models</h1>
       <div class="authors">
         <p>
           <a href="#">TODO: Author name 1</a><sup>1</sup>,
@@ -176,14 +176,13 @@
         ></iframe>
       </div>
       <p>
-        TODO: This is the short explanation paragraph of the video. Add your
-        paragraph here if required
+        A demonstration of the sm4llVTONs family of models in action.
       </p>
     </div>
 
     <div class="abstract" id="abstract">
       <h2>Abstract</h2>
-      <p>TODO: Add Abstract</p>
+      <p>sm4llVTONs, a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more. This page provides an overview of our current models, methodology, and performance benchmarks. The full details of our training methodology and architecture will be published in our upcoming research paper. </p>
     </div>
 
     <!-- Step 3 End: Add your paper abstract -->
@@ -197,7 +196,55 @@
 
     <div class="content-section" id="introduction">
       <h2>Introduction</h2>
-      <p>TODO: Add Introduction</p>
+      <h3>Our Current Models</h3>
+      <p>The sm4llVTONs family consists of several lightweight models, each an expert in a specific VTON domain. This specialization allows them to achieve state-of-the-art results on relatively small, targeted datasets.</p>
+      <table>
+        <tr>
+          <th>Model Name</th>
+          <th>Task</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>eyeVTON</td>
+          <td>Sunglasses & Eyewear</td>
+          <td>Release</td>
+        </tr>
+        <tr>
+          <td>shoeVTON</td>
+          <td>Shoes & Footwear</td>
+          <td>Release</td>
+        </tr>
+        <tr>
+          <td>faceVTON *******</td>
+          <td>Face Swapping</td>
+          <td>Beta</td>
+        </tr>
+        <tr>
+          <td>topVTON</td>
+          <td>Upper Body Garments</td>
+          <td>Alpha</td>
+        </tr>
+        <tr>
+          <td>bottomVTON</td>
+          <td>Lower Body Garments</td>
+          <td>Alpha</td>
+        </tr>
+        <tr>
+          <td>dressVTON</td>
+          <td>Dresses</td>
+          <td>Alpha</td>
+        </tr>
+        <tr>
+          <td>bgVTON</td>
+          <td>Background Replacement</td>
+          <td>Alpha</td>
+        </tr>
+      </table>
+      <h3>Key Philosophy & Features</h3>
+      <p>Our work is guided by a core philosophy that distinguishes it from general-purpose VTON and image editing models.
+        Instead of a single, large model that handles many tasks, sm4llVTONs are experts fine-tuned for a single purpose. This results in higher fidelity, better detail preservation, and more intuitive control.
+        Our models are designed to be lightweight, enabling faster training cycles and making them suitable for deployment in environments with limited computational resources.
+        Our methodology is built around a "train-as-you-infer" principle, ensuring that our models perform reliably on in-the-wild images, not just curated datasets.</p>
     </div>
 
     <!-- Step 4 End: Add your paper introduction -->
@@ -211,11 +258,13 @@
 
     <div class="content-section" id="methodology">
       <h2>Methodology</h2>
-      <p>TODO: Add Methodology</p>
-      <ul>
-        <li>TODO</li>
-        <li>TODO</li>
-      </ul>
+      <p>While the complete methodology will be detailed in our paper, we can share a high-level overview of our three-stage process.</p>
+      <h3>Data Curation & Preparation</h3>
+      <p>Our process begins with careful data preparation. We use a combination of paired image sources and advanced procedural augmentation techniques to build our datasets. A key innovation is our inference-aware masking strategy, where masks are generated during training to mimic the conditions of a real-world, automated inference pipeline. This ensures the model is resilient to the unpredictable nature of user-generated content.</p>
+      <h3>The Training Process</h3>
+      <p>All models in the sm4llVTONs family are trained using a unified methodology derived from foundational instruction-based models. We have introduced significant modifications to the training loop, including an optimized loss calculation. This technique focuses the model’s learning exclusively on the relevant image regions, which dramatically improves sample efficiency and the quality of the final result.</p>
+      <h3>Inference & Validation</h3>
+      <p>Inference is handled via ComfyUI, in an environment that mirrors the training conditions. Our most critical component is a custom, and tailored to the model’s objective, automasking process that is consistent between training and real-world use. This end-to-end consistency is fundamental to our models' success and addresses a common pitfall in VTON systems, where models fail to generalize because their training data does not reflect real-world input.</p>
     </div>
 
     <!-- Step 5 End: Add your paper methodology -->
@@ -240,11 +289,7 @@
 
     <div class="content-section" id="results">
       <h2>Results</h2>
-      <p>TODO: Add Results</p>
-      <ul>
-        <li>TODO</li>
-        <li>TODO</li>
-      </ul>
+      <p>[PLACE BENCH]</p>
     </div>
 
     <!-- 3 Images Carousel -->
@@ -252,28 +297,28 @@
     <div class="carousel-container" id="imageCarousel">
       <div class="carousel-track">
         <div class="carousel-slide">
-          <img src="Assets/Photo1.jpg" alt="Slide 1" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+1" alt="Slide 1" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo2.jpg" alt="Slide 2" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+2" alt="Slide 2" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo3.jpg" alt="Slide 3" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+3" alt="Slide 3" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo4.jpg" alt="Slide 4" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+4" alt="Slide 4" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo5.jpg" alt="Slide 5" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+5" alt="Slide 5" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo6.jpg" alt="Slide 6" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+6" alt="Slide 6" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo7.jpg" alt="Slide 7" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+7" alt="Slide 7" />
         </div>
         <div class="carousel-slide">
-          <img src="Assets/Photo8.jpg" alt="Slide 8" />
+          <img src="https://placehold.co/800x600/cccccc/ffffff?text=Result+Image+8" alt="Slide 8" />
         </div>
       </div>
       <button class="carousel-button prev">←</button>
@@ -408,7 +453,7 @@
 
     <div class="content-section" id="conclusion">
       <h2>Conclusion</h2>
-      <p>TODO: Add Conclusion</p>
+      <p>The sm4llVTONs family of models represents a significant step forward in the field of specialized virtual try-on applications. By focusing on lightweight, expert models and a "train-as-you-infer" methodology, we achieve high-fidelity results that are robust to real-world conditions. Future work will involve the release of the full research paper with detailed benchmarks and continued development of the alpha and beta models.</p>
     </div>
 
     <!-- Step 7 End: Add your paper conclusion -->
@@ -428,11 +473,11 @@
       <pre>
         <!-- Please edit only below details -->
         <code class="language-bibtex">
-          @inproceedings{TODO: YourPaperCitation,
-            title={TODO: Paper Title},
+          @inproceedings{sm4llVTONs2024,
+            title={sm4llVTONs: A Family of Specialized Virtual Try-On Models},
             author={[TODO: Author Names]},
             booktitle={[TODO: Conference Name]},
-            year={TODO: 2024},
+            year={2024},
             pages={[pages]}
           }
         </code>
@@ -457,7 +502,7 @@
 
     <div class="footer">
       <!-- Step 10 Start: Edit footer -->
-      <p>© 2024 [TODO: Add Name or University]. All rights reserved.</p>
+      <p>© 2024 [sm4llVTONs Team]. All rights reserved.</p>
       <!-- Step 10 End: Edit footer -->
       <!-- Please do not remove below code. -->
       <p>
