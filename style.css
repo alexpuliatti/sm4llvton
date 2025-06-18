@@ -240,8 +240,8 @@ h2 {
 }
 .image-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: 1fr; /* Single-column layout for large images */
+  gap: 40px; /* Space between the stacked images */
 }
 .image-gallery-grid img {
   width: 100%;
@@ -251,13 +251,5 @@ h2 {
   transition: transform 0.3s ease;
 }
 .image-gallery-grid img:hover {
-    transform: scale(1.03);
-}
-
-/* Responsive layout for the grid */
-@media (max-width: 600px) {
-  .image-gallery-grid {
-    grid-template-columns: 1fr; /* Single column on small screens */
-    gap: 30px;
-  }
+    transform: scale(1.02); /* Subtle hover effect for large images */
 }
