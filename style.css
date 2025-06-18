@@ -339,34 +339,44 @@ h2 {
   background-color: #f1f1f1;
 }
 
-/* Styles for the image grids in Results */
+/* Styles for the horizontally scrolling image galleries in Results */
 .result-image-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 15px;
+  flex-wrap: nowrap; /* Ensures all images stay in a single line */
+  overflow-x: auto;  /* Enables horizontal scrolling */
+  overflow-y: hidden;
+  gap: 20px;         /* Creates space between images */
   margin-bottom: 30px;
+  padding: 10px 2px; /* Adds some padding for aesthetics */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f1f1f1;
 }
+
+/* Custom scrollbar for better appearance on Webkit browsers (Chrome, Safari) */
+.result-image-grid::-webkit-scrollbar {
+  height: 8px;
+}
+.result-image-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.result-image-grid::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.result-image-grid::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
 .result-image-item {
-  flex: 1 1 180px; /* Grow and shrink, with a base size */
-  max-width: 23%;
+  flex: 0 0 auto; /* Prevents images from shrinking */
 }
+
 .result-image-item img {
-  width: 100%;
-  height: auto;
+  width: auto;      /* Display image at its original width */
+  height: auto;     /* Maintain aspect ratio */
+  max-width: none;  /* Crucial: Prevents browser from shrinking the image */
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: block;
-}
-/* Make grid responsive for smaller screens */
-@media (max-width: 768px) {
-  .result-image-item {
-    max-width: 45%; /* 2 images per row */
-  }
-}
-@media (max-width: 480px) {
-  .result-image-item {
-    max-width: 90%; /* 1 image per row */
-  }
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
