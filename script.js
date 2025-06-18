@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* --- Dark Mode Toggle --- */
-  const toggleBtn = document.querySelector(".toggle-btn");
-  if(toggleBtn) {
-    toggleBtn.onclick = function() {
-      document.body.classList.toggle("dark-mode");
-      document.querySelector(".nav").classList.toggle("dark-mode");
-    };
-  }
-
   /* --- BibTeX Copy Button --- */
   const copyBtn = document.querySelector(".bibtex-copy-button");
   if(copyBtn) {
@@ -83,11 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Make functions globally accessible for inline onclick attributes
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-  document.querySelector(".nav").classList.toggle("dark-mode");
-}
-
 function copyBibTeX() {
   const bibTexElement = document.querySelector(".bibtex-section pre code");
   if(bibTexElement) {
