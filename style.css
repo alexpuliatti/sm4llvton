@@ -339,44 +339,63 @@ h2 {
   background-color: #f1f1f1;
 }
 
-/* Styles for the horizontally scrolling image galleries in Results */
-.result-image-grid {
-  display: flex;
-  flex-wrap: nowrap; /* Ensures all images stay in a single line */
-  overflow-x: auto;  /* Enables horizontal scrolling */
-  overflow-y: hidden;
-  gap: 20px;         /* Creates space between images */
-  margin-bottom: 30px;
-  padding: 10px 2px; /* Adds some padding for aesthetics */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-  scrollbar-width: thin;
-  scrollbar-color: #ccc #f1f1f1;
+/* Styles for the benchmark table in Results */
+.benchmark-table {
+  width: 100%;
+  margin-top: 25px;
 }
 
-/* Custom scrollbar for better appearance on Webkit browsers (Chrome, Safari) */
-.result-image-grid::-webkit-scrollbar {
-  height: 8px;
-}
-.result-image-grid::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-.result-image-grid::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
-}
-.result-image-grid::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
+.benchmark-header,
+.benchmark-row {
+  display: grid;
+  /* Create 6 columns. The first (input) is smaller. */
+  grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  align-items: start;
+  margin-bottom: 25px;
 }
 
-.result-image-item {
-  flex: 0 0 auto; /* Prevents images from shrinking */
+.benchmark-header > div {
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
-.result-image-item img {
-  width: auto;      /* Display image at its original width */
-  height: auto;     /* Maintain aspect ratio */
-  max-width: none;  /* Crucial: Prevents browser from shrinking the image */
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+.sm4ll-header {
+  color: #d9534f; /* Red color for your model's name */
+}
+
+.benchmark-cell {
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+}
+
+.benchmark-cell img {
+  width: 100%; /* This makes the image responsive to the cell size */
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+  .benchmark-header {
+    /* Hide the text headers on smaller screens to save space */
+    display: none;
+  }
+  .benchmark-row {
+    /* Change to a 3-column layout */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .benchmark-row {
+    /* Change to a 2-column layout */
+    grid-template-columns: 1fr 1fr;
+  }
 }
