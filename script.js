@@ -37,25 +37,49 @@ document.addEventListener("DOMContentLoaded", () => {
   
   /* --- Intersection Observer for reveal-on-scroll effect --- */
   const revealElements = document.querySelectorAll(".reveal-on-scroll");
-
   const observerOptions = {
-    root: null, // relative to the viewport
+    root: null,
     rootMargin: '0px',
-    threshold: 0.1 // Trigger when 10% of the element is visible
+    threshold: 0.1
   };
-
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target); // Animate only once
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
-
   revealElements.forEach(el => {
     observer.observe(el);
   });
+
+  /* --- Image Modal Logic --- */
+  const modal = document.getElementById("imageModal");
+  if(modal) {
+    const modalImg = document.getElementById("modalImage");
+    const galleryImages = document.querySelectorAll(".image-gallery-grid img");
+    const closeModalSpan = document.getElementById("closeModalSpan");
+
+    galleryImages.forEach(img => {
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    if(closeModalSpan) {
+      closeModalSpan.onclick = function() {
+        modal.style.display = "none";
+      }
+    }
+
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  }
 });
 
 // Make functions globally accessible for inline onclick attributes
