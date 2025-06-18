@@ -102,6 +102,13 @@ h2 {
 .buttons a:hover {
   background-color: #3498db;
 }
+/* Styling for disabled buttons */
+.disabled-button {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  pointer-events: none; /* This prevents all click and hover effects */
+}
 .bibtex-section {
   position: relative;
   margin-top: 40px;
