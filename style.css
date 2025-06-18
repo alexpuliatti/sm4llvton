@@ -306,3 +306,67 @@ h2 {
 .dark-mode .nav a:hover {
   color: #3498db;
 }
+
+/* Styles for the table from Introduction */
+.table-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+.spreadsheet-table {
+  border-collapse: collapse;
+  width: 80%;
+  font-size: 1.1em;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+.spreadsheet-table th,
+.spreadsheet-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+.spreadsheet-table th {
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+}
+.spreadsheet-table tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+ .spreadsheet-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styles for the image grids in Results */
+.result-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.result-image-item {
+  flex: 1 1 180px; /* Grow and shrink, with a base size */
+  max-width: 23%;
+}
+.result-image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
+}
+/* Make grid responsive for smaller screens */
+@media (max-width: 768px) {
+  .result-image-item {
+    max-width: 45%; /* 2 images per row */
+  }
+}
+@media (max-width: 480px) {
+  .result-image-item {
+    max-width: 90%; /* 1 image per row */
+  }
+}
