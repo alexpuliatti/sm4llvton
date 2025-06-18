@@ -4,44 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sm4llVTONs: A Family of Specialized Virtual Try-On Models</title>
-
     <meta name="description" content="sm4llVTONs, a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more." />
-    <meta
-      name="keywords"
-      content="sm4llVTONs, research papers, academic papers, AI research, hci, machine learning, published papers, scientific papers, academic journals, virtual try-on, digital fashion, VTON"
-    />
-    
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-70.png"
-      sizes="70x70"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-72.png"
-      sizes="72x72"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-96.png"
-      sizes="96x96"
-      type="image/png"
-    />
-
+    <meta name="keywords" content="sm4llVTONs, research papers, academic papers, AI research, hci, machine learning, published papers, scientific papers, academic journals, virtual try-on, digital fashion, VTON" />
+    <link rel="icon" href="Assets/Favicon/icons8-research-color-16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="Assets/Favicon/icons8-research-color-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="Assets/Favicon/icons8-research-color-96.png" sizes="96x96" type="image/png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -88,56 +55,20 @@
       <h2>Introduction</h2>
       <h3>Our Current Models</h3>
       <p>The sm4llVTONs family consists of several lightweight models, each an expert in a specific VTON domain. This specialization allows them to achieve state-of-the-art results on relatively small, targeted datasets.</p>
-      
       <div class="table-container">
         <table class="spreadsheet-table">
-          <tr>
-            <th>Model Name</th>
-            <th>Task</th>
-            <th>Status</th>
-          </tr>
-          <tr>
-            <td>sm4ll-eye</td>
-            <td>Sunglasses & Eyewear</td>
-            <td>Release</td>
-          </tr>
-          <tr>
-            <td>sm4ll-shoes</td>
-            <td>Shoes & Footwear</td>
-            <td>Release</td>
-          </tr>
-          <tr>
-            <td>sm4ll-face</td>
-            <td>Face Swapping</td>
-            <td>Beta</td>
-          </tr>
-          <tr>
-            <td>sm4ll-top</td>
-            <td>Upper Body Garments</td>
-            <td>Alpha</td>
-          </tr>
-          <tr>
-            <td>sm4ll-bottom</td>
-            <td>Lower Body Garments</td>
-            <td>Alpha</td>
-          </tr>
-          <tr>
-            <td>sm4ll-dress</td>
-            <td>Dresses</td>
-            <td>Alpha</td>
-          </tr>
-          <tr>
-            <td>sm4ll-bg</td>
-            <td>Background Replacement</td>
-            <td>Alpha</td>
-          </tr>
+          <tr><th>Model Name</th><th>Task</th><th>Status</th></tr>
+          <tr><td>sm4ll-eye</td><td>Sunglasses & Eyewear</td><td>Release</td></tr>
+          <tr><td>sm4ll-shoes</td><td>Shoes & Footwear</td><td>Release</td></tr>
+          <tr><td>sm4ll-face</td><td>Face Swapping</td><td>Beta</td></tr>
+          <tr><td>sm4ll-top</td><td>Upper Body Garments</td><td>Alpha</td></tr>
+          <tr><td>sm4ll-bottom</td><td>Lower Body Garments</td><td>Alpha</td></tr>
+          <tr><td>sm4ll-dress</td><td>Dresses</td><td>Alpha</td></tr>
+          <tr><td>sm4ll-bg</td><td>Background Replacement</td><td>Alpha</td></tr>
         </table>
       </div>
-
       <h3>Key Philosophy & Features</h3>
-      <p>Our work is guided by a core philosophy that distinguishes it from general-purpose VTON and image editing models.
-        Instead of a single, large model that handles many tasks, sm4llVTONs are experts fine-tuned for a single purpose. This results in higher fidelity, better detail preservation, and more intuitive control.
-        Our methodology is built around a "train-like-you-infer" principle, ensuring that our models perform reliably on in-the-wild images, not just curated datasets.</p>
+      <p>Our work is guided by a core philosophy that distinguishes it from general-purpose VTON and image editing models. Instead of a single, large model that handles many tasks, sm4llVTONs are experts fine-tuned for a single purpose. This results in higher fidelity, better detail preservation, and more intuitive control. Our methodology is built around a "train-like-you-infer" principle, ensuring that our models perform reliably on in-the-wild images, not just curated datasets.</p>
     </div>
 
     <div class="content-section" id="methodology">
@@ -152,68 +83,57 @@
     </div>
 
     <div class="content-section" id="results">
-        <h2>Results</h2>
-        <div class="benchmark-table">
-          <div class="benchmark-header">
-            <div>Input</div>
-            <div>Kontext Max</div>
-            <div>GPT-4o</div>
-            <div>catVTON-FLUX</div>
-            <div>FASHN AI</div>
-            <div class="sm4ll-header">sm4ll</div>
-          </div>
-      
-          <div class="benchmark-row">
-            <div class="benchmark-cell">
-              <img src="https://placehold.co/200x400/cccccc/ffffff?text=Input+Image" alt="Input for Dress 1">
-            </div>
-            <div class="benchmark-cell">
-              <img src="https://placehold.co/400x400/cccccc/ffffff?text=Kontext+Max" alt="Kontext Max result for Dress 1">
-            </div>
-            <div class="benchmark-cell">
-              <img src="https://placehold.co/400x400/cccccc/ffffff?text=GPT-4o" alt="GPT-4o result for Dress 1">
-            </div>
-            <div class="benchmark-cell">
-              <img src="https://placehold.co/400x400/cccccc/ffffff?text=catVTON" alt="catVTON-FLUX result for Dress 1">
-            </div>
-            <div class="benchmark-cell">
-              <img src="https://placehold.co/400x400/cccccc/ffffff?text=FASHN+AI" alt="FASHN AI result for Dress 1">
-            </div>
-            <div class="benchmark-cell">
-              <img src="Assets/dress_1.jpg" alt="sm4ll result for Dress 1">
-            </div>
-          </div>
-          
-          </div>
+      <h2>Results</h2>
+
+      <div class="category-section reveal-on-scroll">
+        <h3>Glasses</h3>
+        <div class="image-gallery-grid">
+          <img src="Assets/glass_1.jpg" alt="Glasses Example 1">
+          <img src="Assets/glass_2.jpg" alt="Glasses Example 2">
+          <img src="Assets/glass_3.jpg" alt="Glasses Example 3">
+          <img src="Assets/glass_4.jpg" alt="Glasses Example 4">
+        </div>
       </div>
 
-    <h3>Image Gallery</h3>
-    <div class="carousel-container" id="imageCarousel">
-      <div class="carousel-track">
-        <div class="carousel-slide"><img src="Assets/glass_1.jpg" alt="Glasses Result 1" /></div>
-        <div class="carousel-slide"><img src="Assets/glass_2.jpg" alt="Glasses Result 2" /></div>
-        <div class="carousel-slide"><img src="Assets/glass_3.jpg" alt="Glasses Result 3" /></div>
-        <div class="carousel-slide"><img src="Assets/glass_4.jpg" alt="Glasses Result 4" /></div>
-        <div class="carousel-slide"><img src="Assets/top_1.jpg" alt="Top Result 1" /></div>
-        <div class="carousel-slide"><img src="Assets/top_2.jpg" alt="Top Result 2" /></div>
-        <div class="carousel-slide"><img src="Assets/top_3.jpg" alt="Top Result 3" /></div>
-        <div class="carousel-slide"><img src="Assets/top_4.jpg" alt="Top Result 4" /></div>
-        <div class="carousel-slide"><img src="Assets/bottom_1.jpg" alt="Bottom Result 1" /></div>
-        <div class="carousel-slide"><img src="Assets/bottom_2.jpg" alt="Bottom Result 2" /></div>
-        <div class="carousel-slide"><img src="Assets/bottom_3.jpg" alt="Bottom Result 3" /></div>
-        <div class="carousel-slide"><img src="Assets/bottom_4.jpg" alt="Bottom Result 4" /></div>
-        <div class="carousel-slide"><img src="Assets/dress_1.jpg" alt="Dress Result 1" /></div>
-        <div class="carousel-slide"><img src="Assets/dress_2.jpg" alt="Dress Result 2" /></div>
-        <div class="carousel-slide"><img src="Assets/dress_3.jpg" alt="Dress Result 3" /></div>
-        <div class="carousel-slide"><img src="Assets/dress_4.jpg" alt="Dress Result 4" /></div>
-        <div class="carousel-slide"><img src="Assets/shoes_1.jpg" alt="Shoes Result 1" /></div>
-        <div class="carousel-slide"><img src="Assets/shoes_2.jpg" alt="Shoes Result 2" /></div>
-        <div class="carousel-slide"><img src="Assets/shoes_3.jpg" alt="Shoes Result 3" /></div>
-        <div class="carousel-slide"><img src="Assets/shoes_4.jpg" alt="Shoes Result 4" /></div>
+      <div class="category-section reveal-on-scroll">
+        <h3>Top</h3>
+        <div class="image-gallery-grid">
+          <img src="Assets/top_1.jpg" alt="Top Garment Example 1">
+          <img src="Assets/top_2.jpg" alt="Top Garment Example 2">
+          <img src="Assets/top_3.jpg" alt="Top Garment Example 3">
+          <img src="Assets/top_4.jpg" alt="Top Garment Example 4">
+        </div>
       </div>
-      <button class="carousel-button prev">←</button>
-      <button class="carousel-button next">→</button>
-      <div class="carousel-indicators"></div>
+
+      <div class="category-section reveal-on-scroll">
+        <h3>Bottom</h3>
+        <div class="image-gallery-grid">
+          <img src="Assets/bottom_1.jpg" alt="Bottom Garment Example 1">
+          <img src="Assets/bottom_2.jpg" alt="Bottom Garment Example 2">
+          <img src="Assets/bottom_3.jpg" alt="Bottom Garment Example 3">
+          <img src="Assets/bottom_4.jpg" alt="Bottom Garment Example 4">
+        </div>
+      </div>
+
+      <div class="category-section reveal-on-scroll">
+        <h3>Dresses</h3>
+        <div class="image-gallery-grid">
+          <img src="Assets/dress_1.jpg" alt="Dress Example 1">
+          <img src="Assets/dress_2.jpg" alt="Dress Example 2">
+          <img src="Assets/dress_3.jpg" alt="Dress Example 3">
+          <img src="Assets/dress_4.jpg" alt="Dress Example 4">
+        </div>
+      </div>
+
+      <div class="category-section reveal-on-scroll">
+        <h3>Shoes</h3>
+        <div class="image-gallery-grid">
+          <img src="Assets/shoes_1.jpg" alt="Shoes Example 1">
+          <img src="Assets/shoes_2.jpg" alt="Shoes Example 2">
+          <img src="Assets/shoes_3.jpg" alt="Shoes Example 3">
+          <img src="Assets/shoes_4.jpg" alt="Shoes Example 4">
+        </div>
+      </div>
     </div>
 
     <div class="content-section" id="conclusion">
@@ -223,20 +143,14 @@
 
     <div class="bibtex-section" id="bibtex">
       <h2>BibTeX</h2>
-      <button class="bibtex-copy-button" onclick="copyBibTeX()">
-        Copy to Clipboard
-      </button>
-      <pre>
-        <code class="language-bibtex">
-          @inproceedings{sm4llVTONs2024,
-            title={sm4llVTONs: A Family of Specialized Virtual Try-On Models},
-            author={Alex Puliatti and Andrea Baioni},
-            booktitle={[TODO: Conference Name]},
-            year={2024},
-            pages={[pages]}
-          }
-        </code>
-      </pre>
+      <button class="bibtex-copy-button" onclick="copyBibTeX()">Copy to Clipboard</button>
+      <pre><code class="language-bibtex">@inproceedings{sm4llVTONs2024,
+  title={sm4llVTONs: A Family of Specialized Virtual Try-On Models},
+  author={Alex Puliatti and Andrea Baioni},
+  booktitle={[TODO: Conference Name]},
+  year={2024},
+  pages={[pages]}
+}</code></pre>
     </div>
 
     <div class="content-section" id="acknowledgement">
@@ -248,18 +162,14 @@
       <p>© 2024 [sm4llVTONs Team]. All rights reserved.</p>
       <p>
         Website template free to borrow from
-        <a
-          href="https://github.com/indramal/iNdra-GitHub-Page-Template-For-Resarch"
-          >here</a
-        >.
+        <a href="https://github.com/indramal/iNdra-GitHub-Page-Template-For-Resarch">here</a>.
       </p>
        <div>
           <img src="https://profile-counter.glitch.me/indragithubpagetemplate/count.svg" alt="Profile Counter">
-</div>
+       </div>
+    </div>
 
-    <button class="scrollUpBtn" id="scrollUpBtn" onclick="scrollToTop()">
-      ⬆
-    </button>
+    <button class="scrollUpBtn" id="scrollUpBtn" onclick="scrollToTop()">⬆</button>
 
     <script src="script.js"></script>
   </body>
