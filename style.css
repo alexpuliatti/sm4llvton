@@ -1,8 +1,6 @@
 :root {
   --bg-color-light: #ffffff;
   --text-color-light: #333;
-  --bg-color-dark: #1e1e1e;
-  --text-color-dark: #f0f0f0;
   --accent-color: #2c3e50;
   --accent-hover: #3498db;
 }
@@ -13,15 +11,10 @@ body {
   margin: 0 auto;
   color: var(--text-color-light);
   background-color: var(--bg-color-light);
-  transition: color 0.3s, background-color 0.3s;
   padding: 0 12px;
 }
 p {
   margin: 4px 0;
-}
-.dark-mode {
-  background-color: var(--bg-color-dark);
-  color: var(--text-color-dark);
 }
 .header {
   text-align: center;
@@ -82,9 +75,6 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.nav.dark-mode {
-  background: var(--bg-color-dark);
-}
 .nav a {
   margin: 0 15px;
   color: var(--accent-color);
@@ -93,21 +83,6 @@ h2 {
 }
 .nav a:hover {
   color: #3498db;
-}
-.toggle-btn {
-  background-color: #517599;
-  color: #fff;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.toggle-btn:hover {
-  background-color: var(--accent-hover);
 }
 .buttons {
   display: flex;
@@ -172,19 +147,6 @@ h2 {
 .scrollUpBtn:hover {
   background-color: #3498db;
 }
-.dark-mode .header,
-.dark-mode .abstract,
-.dark-mode .footer,
-.dark-mode .buttons a,
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode .bibtex-section pre {
-  background-color: #333;
-  color: var(--text-color-dark);
-}
-.dark-mode .nav a { color: var(--text-color-dark); }
-.dark-mode .buttons a:hover { background-color: #3498db; }
-.dark-mode .nav a:hover { color: #3498db; }
 .table-container {
   display: flex;
   justify-content: center;
@@ -235,9 +197,6 @@ h2 {
   padding-bottom: 10px;
   border-bottom: 2px solid #f0f0f0;
   color: var(--accent-color);
-}
-.dark-mode .category-section h3 {
-    border-bottom-color: #444;
 }
 .image-gallery-grid {
   display: grid;
