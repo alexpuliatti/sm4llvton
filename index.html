@@ -130,6 +130,25 @@
           <img src="Assets/shoes_4.jpg" alt="Shoes Example 4">
         </div>
       </div>
+
+      <div class="category-section reveal-on-scroll">
+        <h3>Qualitative Evaluations</h3>
+        <div class="qualitative-text">
+            <p>
+              While we tried our best in getting <strong>Flux Kontext</strong> to deliver acceptable results, we didn't find a consistent prompt structure that could output the desired type of image modifications consistently. As such, these results are the best we could generate, but we don't necessarily think they are indicative of what the model could be capable of in the hands of Black Forest Labs. It is, anyway, in the very nature of instruct-based models to be somewhat limited in their ability to properly execute on prompts written by users who either don't have access to the training dataset, or have limited access to proper documentation.
+            </p>
+            <p>
+              On another note, OpenAI's <strong>GPT-4o</strong> is probably the best model in terms of aesthetic scoring, but, as all current autoregressive models do, "cheats" by delivering an image that is not a direct modification of neither of the two input images, but rather a third, similar image, that cannot be used in a production environment, as even small changes in product and / or underlying approved assets is usually not acceptable in a creative production pipeline.
+            </p>
+            <p>
+              In terms of autosegmentation, <strong>FASHN.ai</strong> is the only one amongst the benchmarked models that tries to have a predictive approach to the segmentation problem. As such, some of the worst generations from FASHN are not to be taken as a limitation of the underlying model, but most likely than not, a limitation of the autosegmentation system employed itself.
+            </p>
+            <p>
+              <strong>CatVTON Flux</strong> still performs rather well in terms of generalization, even when considering that the dataset it's based off is DressCode, which is optimized for Top, Bottom, and Full Body garments only. Regardless of this, it still can perform decently when tasked with out of scope items, such as eyewear and shoes.
+            </p>
+        </div>
+      </div>
+
     </div>
 
     <div class="content-section" id="conclusion">
