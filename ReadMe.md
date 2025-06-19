@@ -9,8 +9,6 @@ sm4llVTONs (same methodology 4 all VTON) is a new family of highly efficient and
 
 ---
 
-## Introduction
-
 ### Our Current Models
 
 The sm4llVTONs family consists of several lightweight models, each an expert in a specific VTON domain. This specialization allows them to achieve state-of-the-art results on relatively small, targeted datasets.
@@ -95,8 +93,6 @@ Inference is handled via ComfyUI, in an environment that mirrors the training co
 Currently in its initial stages, **sm4ll-face** has undergone preliminary testing against best-in-class, publicly available face swapping models: **ACE++** and **ReActor**. In these evaluations, **sm4ll-face** has demonstrated superior performance by achieving the best *Fréchet Inception Distance (FID)* and *CLIP* scores.
 
 ---
-
-## Conclusion
 
 The sm4llVTONs family of models represents a significant step forward in specialized virtual try-on applications. By focusing on lightweight, expert models and a "train-like-you-infer" methodology, we achieve high-fidelity results that are robust to real-world conditions. Future work will involve releasing the full research paper with detailed benchmarks and continuing the development of our alpha and beta models.
 
