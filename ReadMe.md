@@ -5,8 +5,6 @@
 
 ---
 
-## Abstract
-
 sm4llVTONs (same methodology 4 all VTON) is a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more. This page provides an overview of our current models, methodology, and performance benchmarks. The full details of our training methodology and architecture will be published in our upcoming research paper.
 
 ---
