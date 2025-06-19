@@ -287,3 +287,24 @@ h2 {
   color: #bbb;
   text-decoration: none;
 }
+
+/* Styles for references in Acknowledgement */
+.references p {
+  margin-bottom: 1.2em;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.references p:first-of-type {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+.references a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
