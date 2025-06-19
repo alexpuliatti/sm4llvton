@@ -164,10 +164,13 @@
       <h3>Face-swap</h3>
       <div class="qualitative-text">
           <p>
-              Currently in its initial stages, <strong>sm4ll-face</strong> has undergone preliminary testing against best-in-class, publicly available face swapping models: <strong>ACE++</strong> and <strong>ReActor</strong>. In these evaluations, <strong>sm4ll-face</strong> has demonstrated superior performance by reaching the best <em>Fréchet Inception Distance (FID)</em> and <em>CLIP</em> scores out of the three.
+            Currently in its initial stages, <strong>sm4ll-face</strong> has undergone preliminary testing against best-in-class, publicly available face swapping models: <strong>ACE++</strong> and <strong>ReActor</strong>.
           </p>
           <p>
-              From the early tests we have conducted so far, while <strong>ACE++</strong> came close to our results in terms of scoring and qualitative similarity, it struggled with adapting the subject's light based on the context around it (see example 1 and example 2, a cold and blue-ish light coming from our subject's picture). Instead, <strong>sm4ll-face</strong> reaches a slightly higher FID score while achieving consistently a good relighting of the subject's face based on the surrounding context.
+            From the early tests we have conducted so far, while <strong>ACE++</strong> came close to our results in terms of scoring and qualitative similarity, it struggled with adapting the subject's light based on the context around it (see example 1 and example 2, a cold and blue-ish light coming from our subject's picture). Instead, <strong>sm4ll-face</strong> reaches a slightly higher FID score in around 60% of the benchmark generations while achieving consistently a good relighting of the subject's face based on the surrounding context.
+          </p>
+          <p>
+            While preliminary tests performed with the Beta version of <strong>sm4ll-face</strong> model haven't been consistently surpassing <strong>ACE++</strong> and <strong>ReActor</strong> in <em>FID</em> and <em>CLIP</em> scores 100% of the times, we will run more comprehensive quantitative tests once the model is ready for release.
           </p>
       </div>
       <div class="image-gallery-grid">
@@ -180,7 +183,7 @@
 
     <div class="content-section" id="conclusion">
       <h2>Conclusion</h2>
-      <p>The sm4llVTONs family of models represents a significant step forward in the field of specialized virtual try-on applications. By focusing on lightweight, expert models and a "train-like-you-infer" methodology, we achieve high-fidelity results that are robust to real-world conditions. Future work will involve the release of the full research paper with detailed benchmarks and continued development of the alpha and beta models.</p>
+      <p>The sm4llVTONs family of models represents a significant step forward in the field of specialized virtual try-on applications. By focusing on lightweight, expert models and a "train-as-you-infer" methodology, we achieve high-fidelity results that are robust to real-world conditions. Future work will involve the release of the full research paper with detailed benchmarks and continued development of the alpha and beta models.</p>
     </div>
 
     <div class="bibtex-section" id="bibtex">
