@@ -229,7 +229,17 @@ h2 {
 }
 
 .qualitative-text p {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.qualitative-text ul {
+  list-style-position: outside;
+  padding-left: 25px;
+  margin-top: 1em;
+}
+
+.qualitative-text li {
+  margin-bottom: 1em;
 }
 
 /* Styles for the Image Modal (Lightbox) */
