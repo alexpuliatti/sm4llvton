@@ -15,8 +15,8 @@ The sm4llVTONs family consists of several lightweight models, each an expert in 
 
 | Model Name       | Task                     | Status  |
 | ---------------- | ------------------------ | ------- |
-| sm4ll-eye        | Sunglasses & Eyewear     | Release |
-| sm4ll-shoes      | Shoes & Footwear         | Release |
+| sm4ll-eye        | Sunglasses & Eyewear     | Pre-release |
+| sm4ll-shoes      | Shoes & Footwear         | Pre-release |
 | sm4ll-face       | Face Swapping            | Beta    |
 | sm4ll-top        | Upper Body Garments      | Alpha   |
 | sm4ll-bottom     | Lower Body Garments      | Alpha   |
