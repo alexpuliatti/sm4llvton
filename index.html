@@ -52,8 +52,8 @@
       <div class="table-container">
         <table class="spreadsheet-table">
           <tr><th>Model Name</th><th>Task</th><th>Status</th></tr>
-          <tr><td>sm4ll-eye</td><td>Sunglasses & Eyewear</td><td>Pre-release</td></tr>
-          <tr><td>sm4ll-shoes</td><td>Shoes & Footwear</td><td>Pre-release</td></tr>
+          <tr><td>sm4ll-eye</td><td>Sunglasses & Eyewear</td><td>Release</td></tr>
+          <tr><td>sm4ll-shoes</td><td>Shoes & Footwear</td><td>Release</td></tr>
           <tr><td>sm4ll-face</td><td>Face Swapping</td><td>Beta</td></tr>
           <tr><td>sm4ll-top</td><td>Upper Body Garments</td><td>Alpha</td></tr>
           <tr><td>sm4ll-bottom</td><td>Lower Body Garments</td><td>Alpha</td></tr>
@@ -158,13 +158,24 @@
         </div>
       </div>
     </div>
-
+    
     <div class="content-section reveal-on-scroll" id="outside-vton">
-        <h2>Outside of traditional VTON use-cases</h2>
-        <h3>Face-swap</h3>
-        <p class="qualitative-text">
-            Currently in its initial stages, <strong>sm4ll-face</strong> has undergone preliminary testing against best-in-class, publicly available face swapping models: <strong>ACE++</strong> and <strong>ReActor</strong>. In these evaluations, <strong>sm4ll-face</strong> has demonstrated superior performance by reaching the best <em>Fréchet Inception Distance (FID)</em> and <em>CLIP</em> scores out of the three.
-        </p>
+      <h2>Outside of traditional VTON use-cases</h2>
+      <h3>Face-swap</h3>
+      <div class="qualitative-text">
+          <p>
+              Currently in its initial stages, <strong>sm4ll-face</strong> has undergone preliminary testing against best-in-class, publicly available face swapping models: <strong>ACE++</strong> and <strong>ReActor</strong>. In these evaluations, <strong>sm4ll-face</strong> has demonstrated superior performance by reaching the best <em>Fréchet Inception Distance (FID)</em> and <em>CLIP</em> scores out of the three.
+          </p>
+          <p>
+              From the early tests we have conducted so far, while <strong>ACE++</strong> came close to our results in terms of scoring and qualitative similarity, it struggled with adapting the subject's light based on the context around it (see example 1 and example 2, a cold and blue-ish light coming from our subject's picture). Instead, <strong>sm4ll-face</strong> reaches a slightly higher FID score while achieving consistently a good relighting of the subject's face based on the surrounding context.
+          </p>
+      </div>
+      <div class="image-gallery-grid">
+        <img src="Assets/face_1.jpg" alt="Face-swap Example 1">
+        <img src="Assets/face_2.jpg" alt="Face-swap Example 2">
+        <img src="Assets/face_3.jpg" alt="Face-swap Example 3">
+        <img src="Assets/face_4.jpg" alt="Face-swap Example 4">
+      </div>
     </div>
 
     <div class="content-section" id="conclusion">
