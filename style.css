@@ -222,6 +222,16 @@ h2 {
     transform: scale(1.02);
 }
 
+.qualitative-text {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+
+.qualitative-text p {
+  margin-bottom: 1.2em;
+}
+
 /* Styles for the Image Modal (Lightbox) */
 .modal {
   display: none;
