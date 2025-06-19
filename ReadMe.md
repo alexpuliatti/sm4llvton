@@ -3,8 +3,6 @@
 **Authors:** Andrea Baioni, Alex Puliatti  
 **Contact:** [andrea@andreabaioni.com](mailto:andrea@andreabaioni.com), [a@puliatti.com](mailto:a@puliatti.com)
 
-[Paper](#) | [Code](#) | [Dataset](#) | [Model](#) | [BibTeX](#bibtex)
-
 ---
 
 ## Abstract
