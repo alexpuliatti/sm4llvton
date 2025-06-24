@@ -1,7 +1,6 @@
 # sm4llVTONs: A Family of Specialized Virtual Try-On Models
 
-**Authors:** Andrea Baioni, Alex Puliatti  
-**Contact:** [andrea@andreabaioni.com](mailto:andrea@andreabaioni.com), [a@puliatti.com](mailto:a@puliatti.com)
+**Authors:** [Andrea Baioni](mailto:andrea@andreabaioni.com), [Alex Puliatti](mailto:a@puliatti.com)
 
 ---
 
