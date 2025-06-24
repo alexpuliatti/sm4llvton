@@ -59,8 +59,8 @@ Our work is guided by a core philosophy that distinguishes it from general-purpo
 - **FASHN.ai**: Unique in its predictive approach to autosegmentation. Some poor results are likely due to limitations in the segmentation system, not the underlying model.
 - **CatVTON Flux**: Performs well in generalization, even with out-of-scope items like eyewear and shoes, despite being trained on a dataset optimized for garments.
 - **sm4llVTONs**: Our models consistently demonstrated stronger performance in:
-    - Delivering accurate results through specialized, expert models.
-    - Minimally affecting the input image while maintaining product precision, a key concern in production pipelines.
+      - Delivering accurate results through specialized, expert models.
+      - Minimally affecting the input image while maintaining product precision, a key concern in production pipelines.
 
 ---
 ### Roadmap
