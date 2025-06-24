@@ -1,27 +1,27 @@
 # sm4llVTONs: A Family of Specialized Virtual Try-On Models
 
-**Authors:** Andrea Baioni, Alex Puliatti  
+**Authors:** Andrea Baioni, Alex Puliatti  
 **Contact:** [andrea@andreabaioni.com](mailto:andrea@andreabaioni.com), [a@puliatti.com](mailto:a@puliatti.com)
 
 ---
 
-sm4llVTONs (same methodology 4 all VTON) is a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more. This page provides an overview of our current models, methodology, and performance benchmarks. 
+sm4llVTONs (same methodology 4 all VTON) is a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more. This page provides an overview of our current models, methodology, and performance benchmarks. 
 
 ---
 
 ### Our Current Models
 
-The sm4llVTONs family consists of several models, each an expert in a specific VTON domain. 
+The sm4llVTONs family consists of several models, each an expert in a specific VTON domain. 
 
-| Model Name       | Task                     | Status  |
+| Model Name       | Task                     | Status  |
 | ---------------- | ------------------------ | ------- |
-| sm4ll-eye        | Sunglasses & Eyewear     | Pre-release |
-| sm4ll-shoes      | Shoes & Footwear         | Pre-release |
-| sm4ll-face       | Face Swapping            | Beta    |
-| sm4ll-top        | Upper Body Garments      | Alpha   |
-| sm4ll-bottom     | Lower Body Garments      | Alpha   |
-| sm4ll-dress      | Dresses                  | Alpha   |
-| sm4ll-bg         | Background Replacement   | Alpha   |
+| sm4ll-eye        | Sunglasses & Eyewear     | Pre-release |
+| sm4ll-shoes      | Shoes & Footwear         | Pre-release |
+| sm4ll-face       | Face Swapping            | Beta    |
+| sm4ll-top        | Upper Body Garments      | Alpha   |
+| sm4ll-bottom     | Lower Body Garments      | Alpha   |
+| sm4ll-dress      | Dresses                  | Alpha   |
+| sm4ll-bg         | Background Replacement   | Alpha   |
 
 ### Key Philosophy & Features
 
@@ -61,9 +61,15 @@ Our work is guided by a core philosophy that distinguishes it from general-purpo
 - **FASHN.ai**: Unique in its predictive approach to autosegmentation. Some poor results are likely due to limitations in the segmentation system, not the underlying model.
 - **CatVTON Flux**: Performs well in generalization, even with out-of-scope items like eyewear and shoes, despite being trained on a dataset optimized for garments.
 - **sm4llVTONs**: Our models consistently demonstrated stronger performance in:
-    - Delivering accurate results through specialized, expert models.
-    - Minimally affecting the input image while maintaining product precision, a key concern in production pipelines.
- 
+    - Delivering accurate results through specialized, expert models.
+    - Minimally affecting the input image while maintaining product precision, a key concern in production pipelines.
+
+---
+### Roadmap
+- [x] Release HuggingFace Gradio demo
+- [ ] Release Alpha models for Eyewear and Shoes (768px)
+- [ ] Release Alpha models for other categories (768px)
+- [ ] Release Paper
 ---
 
 The sm4llVTONs family of models represents a significant step forward in specialized virtual try-on applications. By focusing on lightweight, expert models and a "train-like-you-infer" methodology, we achieve high-fidelity results that are robust to real-world conditions. Future work will involve releasing the full research paper with detailed benchmarks and continuing the development of our alpha and beta models.
@@ -74,7 +80,7 @@ The sm4llVTONs family of models represents a significant step forward in special
 
 ```bibtex
 @inproceedings{sm4llVTONs2025,
-  title={sm4llVTONs: A Family of Specialized Virtual Try-On Models},
-  author={Andrea Baioni and Alex Puliatti},
-  year={2025}
+  title={sm4llVTONs: A Family of Specialized Virtual Try-On Models},
+  author={Andrea Baioni and Alex Puliatti},
+  year={2025}
 }
