@@ -131,7 +131,7 @@
       </div>
 
       <div class="category-section reveal-on-scroll">
-        <h3>Qualitative Evaluations</h3>
+        <h3>Qualitative results and creative production pipeline</h3>
         <div class="qualitative-text">
             <p>
               While we tried our best in getting <strong>Flux Kontext</strong> to deliver acceptable results, we didn't find a consistent prompt structure that could output the desired type of image modifications consistently. As such, these results are the best we could generate, but we don't necessarily think they are indicative of what the model could be capable of in the hands of Black Forest Labs. It is, anyway, in the very nature of instruct-based models to be somewhat limited in their ability to properly execute on prompts written by users who either don't have access to the training dataset, or have limited access to proper documentation.
@@ -145,17 +145,37 @@
             <p>
               <strong>CatVTON Flux</strong> still performs rather well in terms of generalization, even when considering that the dataset it's based off is DressCode, which is optimized for Top, Bottom, and Full Body garments only. Regardless of this, it still can perform decently when tasked with out of scope items, such as eyewear and shoes.
             </p>
+
+            <h4>Real World Fashion Production Pipelines</h4>
+
             <p>
-              Although these benchmarks are from a preliminary testing phase and a more in-depth evaluation is ongoing, the sm4ll model family has demonstrated consistently stronger performance compared to the other models in the following areas:
+                There are currently multiple ways to generate images of people wearing product, but most of them do not fully integrate in traditional production pipelines. As shown in the below example, VTON models should be able to be integrated in a complex system where each image is approved throughout different stages and people in a corporate environment.
+            </p>
+            <p>
+                Some of the most commonly known models, like GPT-4o, cannot satisfy this need, as the images it generates are always slight variations of both the product and the underlying asset. Other models, like CatVTON or other commercially available VTONs, do not reach the desired level of fidelity when generating products.
+            </p>
+            
+            <div class="image-gallery-grid" style="margin-top: 2em; margin-bottom: 2em;">
+                <img src="Assets/prodpipeline1.jpeg" alt="Creative Production Pipeline Diagram">
+            </div>
+
+            <p>
+                Although these benchmarks are from a preliminary testing phase and a more in-depth evaluation is ongoing, the sm4ll model family has demonstrated consistently stronger performance compared to the other models in the following areas:
             </p>
             <ul>
-              <li>
-                Delivering accurate results through models specialized in specific product categories. This approach provides a distinct advantage that aligns with the demands of real-world creative production pipelines. While our results are highly competitive with single-product, single-view LoRAs, the slight trade-off in quality is strategically outweighed by the scalability factor of not needing to train a unique model for every product.
-              </li>
-              <li>
-                Being able to minimally affect the underlying input image(s) while retaining product precision, which is, in our experience, a relevant concern in real-world production pipelines.
-              </li>
+                <li>Delivering accurate results through models specialized in specific product categories.</li>
+                <li>Being able to minimally affect the underlying input image(s) while retaining product precision, which is, in our experience, a relevant concern in real-world production pipelines.</li>
             </ul>
+
+            <p>
+                Due to our time spent working with and talking to the Creative, Marketing, and Product departments at global brands, we believe that expert models would satisfy both of the above needs.
+            </p>
+            <p>
+                Another way to solve these needs would be to train single LoRAs on every product. While our results are highly competitive with single-product, single-view LoRAs, the slight trade-off in quality is strategically outweighed by the scalability factor of not needing to train a unique model for every product. Training LoRAs is time and resource intensive, and often necessitates a higher degree of automation than VTON models if companies wish to develop a truly scalable system.
+            </p>
+            <p>
+                The necessary degree of precision and fidelity is also different whether the models are used in a B2B or a B2B2C (or B2C) setting. For bigger campaigns and marketing efforts, LoRAs provide a higher degree of fidelity than VTON models, however specialized they are. On the other hand, if the effort is geared towards letting marketplace users try on products, specialized VTONs are faster to deploy than both LoRAs and regular AR solutions.
+            </p>
         </div>
       </div>
     </div>
