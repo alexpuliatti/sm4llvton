@@ -1,7 +1,7 @@
 # sm4llVTONs: A Family of Specialized Virtual Try-On Models
 
 **Authors:** [Andrea Baioni](mailto:andrea@andreabaioni.com), [Alex Puliatti](mailto:a@puliatti.com)
-
+YourMirror AI
 ---
 
 sm4llVTONs (same methodology 4 all VTON) is a new family of highly efficient and specialized diffusion models for virtual try-on (VTON) applications, and more. This page provides an overview of our current models, methodology, and performance benchmarks. 
