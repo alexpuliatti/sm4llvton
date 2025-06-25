@@ -60,9 +60,12 @@ Our work is guided by a core philosophy that distinguishes it from general-purpo
 - **CatVTON Flux**: Performs well in generalization, even with out-of-scope items like eyewear and shoes, despite being trained on a dataset optimized for garments.
 
 **Real World Fashion Production Pipelines**
+
 There are currently multiple ways to generate images of people wearing product, but most of them do not fully integrate in traditional production pipelines. As shown in the below example, VTON models should be able to be integrated in a complex system where each image is approved throughout different stages and people in a corporate environment.
 
 Some of the most commonly known models, like GPT-4o, cannot satisfy this need, as the images it generates are always slight variations of both the product and the underlying asset. Other models, like CatVTON or other commercially available VTONs, do not reach the desired level of fidelity when generating products, or suffer from poor masking quality that ends up changing the full outfits in a significant way.
+
+<img src="Assets/prodpipeline1.jpeg" alt="A simple example of what a commercial production pipeline looks like" width="720"/>
 
 Although these benchmarks are from a preliminary testing phase and a more in-depth evaluation is ongoing, the sm4ll model family has demonstrated consistently stronger performance compared to the other models in the following areas:
 
