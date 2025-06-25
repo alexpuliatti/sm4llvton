@@ -81,6 +81,8 @@ The necessary degree of precision and fidelity is also different whether the mod
 ### Roadmap
 - [x] Release HuggingFace Gradio demo
 - [ ] Release Alpha models for Eyewear and Shoes (768px)
+- [ ] Release Comfy Workflow for Eyewear and Shoes
+- [ ] Release Segmentation Model
 - [ ] Release Alpha models for other categories (768px)
 - [ ] Release Paper
 ---
